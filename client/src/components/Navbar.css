@@ -1,0 +1,24 @@
+.nav-link.custom-hover {
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link.custom-hover:hover {
+    color: rgb(255, 43, 123) !important;
+  }
+  
+  .nav-link.custom-hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: rgb(255, 43, 123);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link.custom-hover:hover::after {
+    width: 100%;
+  }
+  
